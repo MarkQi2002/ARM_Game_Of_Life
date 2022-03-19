@@ -10,12 +10,33 @@
 
 ## Rule Of The Game [1]
 ### For a space that is populated:
-*- Each cell with one or no neighbors dies, as if by solitude* <br />
-*- Each cell with four or more neighbors dies, as if by overpopulation.* <br />
-*- Each cell with two or three neighbors survives.* <br />
+*- Each cell with one or no neighbors dies, as if by solitude (Rule 1)* <br />
+<p align="center">
+<img src="images/Rule_One.png">  <br />
+<p align="left">
+*- Each cell with four or more neighbors dies, as if by overpopulation (Rule 2)* <br />
+<p align="center">
+<img src="images/Rule_Two.png">  <br />
+<p align="left">
+*- Each cell with two or three neighbors survives (Rule 3)* <br />
+<p align="center">
+<img src="images/Rule_Three.png">  <br />
+<p align="left">
 
 ### For a space that is empty or unpopulated:
-*- Each cell with three neighbors becomes populated.*
+*- Each cell with three neighbors becomes populated (Rule 4)*
+<p align="center">
+<img src="images/Rule_Four.png">  <br />
+<p align="left">
+
+## Conclusion
+- This program demonstrated how the double buffer for the VGA controller in the DE1-SoC draw the frames using the memory mapped I/O ports.
+- The underlying algorithm for Game of Life isn't hard to understand.
+- The time complexity of the algorithm is O(m * n) where m is the number of rows and n is the number of columns.
+- The space complexity of the algorithm is O(1).
+  
+## Timeline
+- 03/19/2022, Completed and tested the first version of the program using CPUlator.
 
 ## Reference
 [1] Game of Life Explanation, https://playgameoflife.com/info
